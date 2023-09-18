@@ -15,10 +15,6 @@ public class UserInterface {
         readPoints();
         System.out.println("");
         printGradeDistribution();
-        System.out.print("The average of points: ");
-        System.out.println(this.register.averageOfPoints());
-        System.out.print("The average of grades: ");
-        System.out.println(this.register.averageOfGrades());
     }
 
     public void readPoints() {

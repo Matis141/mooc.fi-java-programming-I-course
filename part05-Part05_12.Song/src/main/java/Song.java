@@ -16,6 +16,7 @@ public class Song {
         return this.artist + ": " + this.name + " (" + this.durationInSeconds + " s)";
     }
 
+
     public boolean equals(Object compared) {
         // if the variables are located in the same position, they are equal
         if (this == compared) {
@@ -33,12 +34,11 @@ public class Song {
         // if the values of the object variables are equal, the objects are equal
         if (this.artist.equals(comparedSong.artist) &&
             this.name.equals(comparedSong.name) &&
-            this.durationInSeconds == comparedSong.durationInSeconds) {
+            this.durationInSeconds == durationInSeconds) {
             return true;
         }
 
         // otherwise the objects are not equal
         return false;
     }
-    
 }
